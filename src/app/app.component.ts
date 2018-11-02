@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  navLinks = [
+    { path: '/home', label: 'Home' },
+    {path: '/gallery', label: 'Gallery'},
+    { path: '/services', label: 'Services' },
+    { path: '/about', label: 'About Us' },
+    { path: '/contact', label: 'Contact Us' },
+
+  ];
+
+  constructor(private router: Router) {}
 }
