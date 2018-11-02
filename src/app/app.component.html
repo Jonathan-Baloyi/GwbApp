@@ -1,9 +1,9 @@
 <div class="landing-container">
 </div>
-<nav mat-tab-nav-bar class="d-flex justify-content-end" style="background-color: red;">
-    <a mat-tab-link *ngFor="let link of navLinks" style="color: white; font-size: 18px" [routerLink]="link.path" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
-        <strong>{{link.label}}</strong>
-    </a>
+<nav mat-tab-nav-bar class="navbar d-flex justify-content-end" style="background-color: red;">
+    <a mat-tab-link *ngFor="let link of navLinks" style="color:white" [routerLink]="link.path" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
+    {{link.label}}
+  </a>
 </nav>
 
 <router-outlet>
