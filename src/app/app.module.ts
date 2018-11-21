@@ -42,6 +42,7 @@ import {
 import { CdkTableModule } from '@angular/cdk/table';
 import { RouterModule } from '@angular/router';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {SlideshowModule} from 'ng-simple-slideshow';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     GalleryComponent
   ],
   imports: [
+    SlideshowModule,
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,

@@ -1,3 +1,6 @@
-<p>
-  gallery works!
-</p>
+<div style="margin-top: 2%">
+    <h4 style="text-align: center; color: white">Gallery</h4>
+</div>
+
+<slideshow [showDots]="true" [autoPlayInterval]="6000" [minHeight]="'500px'" [autoPlay]="true" [showArrows]="true" [imageUrls]="imageSources" [lazyLoad]="imageSources?.length > 1" [autoPlayWaitForLazyLoad]="true">
+</slideshow>
