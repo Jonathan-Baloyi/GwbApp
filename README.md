@@ -73,3 +73,12 @@ Use these steps to clone from SourceTree, our client for using the repository co
 
 Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
 
+## How to deploy to github pages
+1. npm install -g angular-cli-ghpages
+2. ng build --prod --base-href "https://username.github.io/ProjectName/"
+3. ngh --dir dist/ProjectName, if there is an issue with silent...., try ngh --no-silent --dir dist/ProjectName
+
+If there is an issue with the connection when you attemp to deploy
+try to remove the origin and re-add using git remote add origin https://username:password@github.com/username/ProjectName.git
+
+After this run step number 3 again to deploy
