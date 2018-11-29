@@ -1,6 +1,21 @@
 
 # GwbApp
 
+** Please Note: for the website to display all images when running locally, you need to update image URL's in home.component.ts and Gallery.component.ts
+	the image url which works locally is as follows:
+	
+	  imageSources: IImage[] = [
+    {url: '../GwbApp/assets/images/bg6.png',
+    backgroundSize: 'cover',
+
+    {url: '../GwbApp/assets/images/bg9.png',
+    backgroundSize: 'cover',
+  ];
+  
+Currently the image URL is './GwbApp/assets/images/bg6.png' which ensures that all images deployed in github pages function.
+
+## https://www.npmjs.com/package/ng-simple-slideshow is utilised for sliding images
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
 ## Development server
