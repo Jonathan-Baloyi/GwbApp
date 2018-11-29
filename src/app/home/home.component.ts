@@ -9,11 +9,11 @@ import { IImage } from 'ng-simple-slideshow';
 export class HomeComponent implements OnInit {
 
   imageSources: IImage[] = [
-    {url: '../assets/images/bg6.png',
+    {url: '/assets/images/bg6.png',
     backgroundSize: 'cover',
     caption: 'For all floor tilling and ceilings'},
 
-    {url: '../assets/images/bg9.png',
+    {url: '/assets/images/bg9.png',
     backgroundSize: 'cover',
     caption: 'For all roof tilling, we are here for you. We deliver.'},
   ];
