@@ -1,7 +1,7 @@
 <div class="landing-container">
 </div>
 
-<nav mat-tab-nav-bar class="col-sm-12 navbar">
+<nav mat-tab-nav-bar>
     <!-- <IMG SRC="../assets/images/bg7.jpeg" ALT="some text" WIDTH=80 HEIGHT=65> -->
     <a mat-tab-link *ngFor="let link of navLinks" style="color:white" [routerLink]="link.path" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
     {{link.label}}
