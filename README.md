@@ -1,4 +1,7 @@
 
+#For a quick demo:
+https://jonathan-baloyi.github.io/GwbApp/home
+
 # GwbApp
 
 ** Please Note: for the website to display all images when running locally, you need to update image URL's in home.component.ts and Gallery.component.ts
